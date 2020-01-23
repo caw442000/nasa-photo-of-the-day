@@ -37,10 +37,10 @@ function App() {
 
 }, []);
   return (
-    <div className="App">
+    <div className="App" style = {{backgroundImage:`url(${nasaData.hdurl})`}}>
 
       <Header data={nasaData} />
-      <Title data={nasaData} />
+      <Title data={nasaData} style={{color:'white'}}/>
       <PhotoPage data={nasaData} />
       <Footer data= {nasaData} /> 
 
